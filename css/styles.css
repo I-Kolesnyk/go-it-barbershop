@@ -1,0 +1,203 @@
+:root {
+  --main-background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
+  --main-text-color: #555555;
+  --title-text-color: #303030;
+  --secondary-text-color: #9da4bd;
+  --accent-color: #ff6c00;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/*Header*/
+.link.social {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.link.social:hover,
+.link.social:focus {
+  color: var(--accent-color);
+}
+/*Navigation*/
+.link.navigation,
+.link.phone-number {
+  color: var(--main-background-color);
+  background-color: #555555;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+.link.navigation:hover,
+.link.navigation:focus {
+  color: var(--accent-color);
+}
+.header .booking,
+.services .booking {
+  color: var(--main-background-color);
+  background-color: #555555;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+/*Main*/
+.hero-title {
+  color: var(--main-background-color);
+  background-color: #555555;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+.text-description {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero .text-description,
+.services .text-description {
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.contacts .text-description {
+  color: var(--main-background-color);
+  background-color: #555555;
+}
+.hero-text {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17x;
+  letter-spacing: 0.05em;
+}
+.about .text,
+.why .text,
+.contacts .text {
+  font-size: 18px;
+  line-height: 1.67;
+}
+.about .booking {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.services .section-title,
+.on-booking .section-title,
+.contacts .section-title {
+  color: var(--main-background-color);
+  background-color: #555555;
+}
+.left-text,
+.right-text {
+  color: var(--secondary-text-color);
+  background-color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}
+.plus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+}
+.number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.cards .text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+.cards-item {
+  background-color: #f7f7f7;
+}
+.name {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+}
+.barbers .text {
+  color: var(--accent-color);
+  line-height: 1.36;
+  text-align: center;
+}
+.address {
+  font-style: normal;
+}
+.address .link {
+  color: var(--secondary-text-color);
+  background-color: #555555;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.link.street {
+  font-weight: 700;
+}
+/*Footer*/
+.page-footeer .text {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+/*Button*/
+.button {
+  color: var(--main-background-color);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
