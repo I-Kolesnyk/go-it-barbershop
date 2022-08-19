@@ -14,11 +14,37 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px dashed chartreuse;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /*Header*/
 .link.social {
@@ -32,6 +58,7 @@ body {
 .link.social:focus {
   color: var(--accent-color);
 }
+
 /*Navigation*/
 .link.navigation,
 .link.phone-number {
@@ -56,7 +83,56 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.link.phone-number {
+  display: inline-block;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin-right: 40px;
+}
+.link.booking {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+.link.booking:hover,
+.link.booking:focus {
+  background-color: var(--accent-color);
+}
+.conts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  display: inline-block;
+  margin-right: 131px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /*Main*/
+.hero {
+  padding-top: 208px;
+  padding-bottom: 208px;
+}
 .hero-title {
   color: var(--main-background-color);
   background-color: #555555;
@@ -65,6 +141,7 @@ body {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 .text-description {
   color: var(--title-text-color);
@@ -81,6 +158,9 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
 }
+.hero .text-description {
+  margin-bottom: 20px;
+}
 .contacts .text-description {
   color: var(--main-background-color);
   background-color: #555555;
@@ -91,7 +171,42 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-
+.hero .container,
+.about .container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.hero-links .list {
+  display: flex;
+}
+.hero-links .item:not(:last-child) {
+  margin-right: 40px;
+}
+.about-pictures .list {
+  display: flex;
+  width: 600px;
+}
+.about-pictures .item {
+  flex-basis: calc((100% - 60px) / 2);
+  margin-right: 30px;
+}
+about .text-description,
+.about .section-title,
+.about .text,
+.services .text-description {
+  margin-bottom: 20px;
+}
+.about .paragraph {
+  margin-bottom: 42px;
+}
+.services .section-title {
+  margin-bottom: 44px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
 .section-title {
   color: var(--title-text-color);
   font-family: "Raleway";

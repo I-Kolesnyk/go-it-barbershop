@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,119 +16,134 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="link">
+      <div class="container">
+        <a href="./index.html" class="link logo">
         <img src="./images/logo.svg" alt="Barbeshop logo" width="69" />
       </a>
-      <ul class="list">
-        <li>
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="link social"
-            >Youtube</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="link social"
-            >Instagram</a
-          >
-        </li>
-      </ul>
       <nav class="navigation">
-        <ul class="list">
-          <li>
+        <ul class="list nav-list">
+          <li class="nav-item">
             <a href="#about" class="link navigation">About</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#services-and-prices" class="link navigation"
               >Services and prices</a
             >
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#our_barbers" class="link navigation">Barbers</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#contacts" class="link navigation">Contacts</a>
           </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111" class="link phone-number"
+      <div class="conts"><a href="tel:+380441111111" class="link phone-number"
         >+38 044 111 11 11</a
       >
-      <a href="#online-booking" class="link booking">Online-booking</a>
+      <a href="#online-booking" class="link booking">Online-booking</a></div></div>
     </header>
     <main>
       <section class="hero">
-        <p class="text-description">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-text">
-          We are experts in trendy men's haircuts. We work quickly, carefully
-          and with style.
-        </p>
-      </section class="hero">
-      <section id="about" class="about">
-        <p class="text-description">About</p>
-        <h2 class="section-title">Best Barbershop in your city</h2>
-        <p class="text">
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <a href="#online-booking" class="link booking">Online-booking</a>
-        <ul class="list">
-          <li><img src="./images/img1.jpg" alt="barber" width="270" /></li>
-          <li><img src="./images/img2.jpg" alt="hair" width="270" /></li>
-        </ul>
+        <div class="container">
+          <div class="hero-main">
+            <p class="text-description">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-text">
+              We are experts in trendy men's haircuts. We work quickly, carefully
+              and with style.
+            </p>
+          </div>
+          <div class="hero-links">
+            <ul class="list">
+              <li class="item">
+                <a
+                href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link social"
+                  >Youtube</a
+                >
+              </li>
+              <li class="item">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                 rel="noopener noreferrer nofollow"
+                  class="link social"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+       </section class="hero">
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="about-main">
+            <p class="text-description">About</p>
+            <h2 class="section-title">Best Barbershop in your city</h2>
+            <p class="text">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+            </p>
+            <p class="paragraph">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our master,
+              you will never be the same again. We are a team that is always "on the
+              same wave" with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
+            </p>
+            <a href="#online-booking" class="link booking">Online-booking</a>
+          </div>
+          <div class="about-pictures">
+            <ul class="list">
+              <li class="item"><img src="./images/img1.jpg" alt="barber" width="270" /></li>
+              <li class="item"><img src="./images/img2.jpg" alt="hair" width="270" /></li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section id="services-and-prices" class="services">
-        <p class="text-description">Spend your time with the best masters</p>
-        <h2 class="section-title">Services and prices</h2>
-        <ul class="list">
-          <li>
-            <p class="left-text">Men's haircut</p>
-            <p class="right-text">from 300 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Beard trim</p>
-            <p class="right-text">from 300 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Mustache trim</p>
-            <p class="right-text">from 200 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Straight razor shave</p>
-            <p class="right-text">from 200 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Trainee's haircut</p>
-            <p class="right-text">from 50 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Haircut under the nozzle</p>
-            <p class="right-text">from 200 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Children's haircut (0-12 y.o.)</p>
-            <p class="right-text">from 300 uah.</p>
-          </li>
-          <li>
-            <p class="left-text">Camouflage of gray hair</p>
-            <p class="right-text">from 200 uah.</p>
-          </li>
-        </ul>
-        <a href="#online-booking" class="link booking">Online-booking</a>
+      <section id="services-and-prices" class="services section">
+        <div class="container">
+          <p class="text-description">Spend your time with the best masters</p>
+          <h2 class="section-title">Services and prices</h2>
+          <ul class="list services-list">
+            <li>
+              <p class="left-text">Men's haircut</p>
+              <p class="right-text">from 300 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Beard trim</p>
+              <p class="right-text">from 300 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Mustache trim</p>
+              <p class="right-text">from 200 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Straight razor shave</p>
+              <p class="right-text">from 200 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Trainee's haircut</p>
+              <p class="right-text">from 50 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Haircut under the nozzle</p>
+              <p class="right-text">from 200 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Children's haircut (0-12 y.o.)</p>
+              <p class="right-text">from 300 uah.</p>
+            </li>
+            <li>
+              <p class="left-text">Camouflage of gray hair</p>
+              <p class="right-text">from 200 uah.</p>
+            </li>
+          </ul>
+          <a href="#online-booking" class="link booking">Online-booking</a>
+        </div>
       </section>
       <section id="why-us" class="why">
         <p class="text-description">Old traditional school</p>
