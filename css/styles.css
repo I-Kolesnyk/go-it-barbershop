@@ -171,13 +171,28 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-.hero .container,
 .about .container {
   display: flex;
   flex-direction: row-reverse;
 }
+.hero .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 .hero-links .list {
   display: flex;
+}
+.hero-main {
+  flex-grow: 1;
+}
+.hero-links {
+  width: 100px;
+  flex-grow: 0;
+}
+.hero-links .list {
+  transform: rotate(270deg);
+  justify-content: flex-end;
 }
 .hero-links .item:not(:last-child) {
   margin-right: 40px;
@@ -202,12 +217,30 @@ about .text-description,
 .services .section-title {
   margin-bottom: 44px;
 }
-.services-list {
+.services-lists {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.services-list-left,
+.services-list-right {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   width: 570px;
 }
-.section-title {
+.services-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.services-item:nth-child(4n) {
+  margin-bottom: 0;
+}
+.services-button {
+  text-align: center;
+}
+.services .section .section-title {
   color: var(--title-text-color);
   font-family: "Raleway";
   font-style: normal;
