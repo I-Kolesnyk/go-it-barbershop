@@ -186,7 +186,7 @@ img {
     ),
     url(../images/slider-img-3.jpg), url(../images/slider-img-1.jpg),
     url(../images/slider-img-1.jpg);
-  background-color: rgba(25, 28, 38, 0.2);
+  background-color: #303030;
   background-origin: padding-box;
 }
 .hero-links {
