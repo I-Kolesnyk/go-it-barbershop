@@ -18,7 +18,9 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="link logo">
-        <img src="./images/logo.svg" alt="Barbeshop logo" width="69" />
+        <svg width="69" height="56">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
       </a>
       <nav class="navigation">
         <ul class="list nav-list">
@@ -153,7 +155,27 @@
       </section>
       <section id="why-us" class="why section">
         <div class="container why-container">
-          <div class="why-main">
+          <div class="why-cards">
+            <ul class="list cards">
+              <li class="cards-item">
+                <p class="number">600<span class="plus">+</span></p>
+                <p class="text">Satisfied customers per day</p>
+              </li>
+              <li class="cards-item">
+                <p class="number">50<span class="plus">+</span></p>
+                <p class="text">Awards for excellent service</p>
+              </li>
+              <li class="cards-item">
+                <p class="number">20<span class="plus">+</span></p>
+                <p class="text">Kyiv's best barbers</p>
+              </li>
+              <li class="cards-item">
+                <p class="number">100<span class="plus">+</span></p>
+                <p class="text">Gifts for regular customers</p>
+              </li>
+            </ul>
+        </div>
+        <div class="why-main">
             <p class="text-description">Old traditional school</p>
             <h2 class="section-title">¿Why people come to us?</h2>
             <p class="text">
@@ -161,126 +183,135 @@
               time than read 10 times.
             </p>
           </div>
-        <div class="why-cards">
-          <ul class="list cards">
-          <li class="cards-item">
-            <p class="number">600<span class="plus">+</span></p>
-            <p class="text">Satisfied customers per day</p>
-          </li>
-          <li class="cards-item">
-            <p class="number">50<span class="plus">+</span></p>
-            <p class="text">Awards for excellent service</p>
-          </li>
-          <li class="cards-item">
-            <p class="number">20<span class="plus">+</span></p>
-            <p class="text">Kyiv's best barbers</p>
-          </li>
-          <li class="cards-item">
-            <p class="number">100<span class="plus">+</span></p>
-            <p class="text">Gifts for regular customers</p>
-          </li>
-        </ul>
-        </div>
         </div>
       </section>
-      <section id="our_barbers" class="barbers">
-        <p class="text-description">For true enjoyers of the atmosphere</p>
-        <h2 class="section-title">Our barbers</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/john-smith.jpg"
-              alt="John Smith photo"
-              width="370"
-            />
-            <p class="name">John Smith</p>
-            <p class="text">Extreme Barber</p>
-            <ul class="list">
-              <li>
-                <a href="" class="link">
-                  <img src="./images/instagram.svg" alt="instagram logo"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/twitter.svg" alt="tweeter logo"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/facebook.svg" alt="facebook logo"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/linkedin.svg" alt="linkedin logo"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/michele-doe.jpg"
-              alt="Michele Doe photo"
-              width="370"
-            />
-            <p class="name">Michele Doe</p>
-            <p class="text">Extreme Barber</p>
-            <ul class="list">
-              <li>
-                <a href="" class="link">
-                  <img src="./images/instagram.svg" alt="instagram logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/twitter.svg" alt="tweeter logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/facebook.svg" alt="facebook logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/linkedin.svg" alt="linkedin logo" />
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/alan-black.jpg"
-              alt="Alan Black photo"
-              width="370"
-            />
-            <p class="name">Alan Black</p>
-            <p class="text">Extreme Barber</p>
-            <ul class="list">
-              <li>
-                <a href="" class="link">
-                  <img src="./images/instagram.svg" alt="instagram logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/twitter.svg" alt="tweeter logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/facebook.svg" alt="facebook logo" />
-                </a>
-              </li>
-              <li>
-                <a href="" class="link">
-                  <img src="./images/linkedin.svg" alt="linkedin logo" />
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <section id="our_barbers" class="barbers section">
+        <div class="container">
+          <p class="text-description">For true enjoyers of the atmosphere</p>
+          <h2 class="section-title">Our barbers</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/john-smith.jpg"
+                alt="John Smith photo"
+                width="370"
+              />
+              <div class="barbers-card-text">
+                <p class="name">John Smith</p>
+                <p class="text">Extreme Barber</p>
+                <ul class="list">
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/michele-doe.jpg"
+                alt="Michele Doe photo"
+                width="370"
+              />
+              <div class="barbers-card-text">
+                <p class="name">Michele Doe</p>
+                <p class="text">Extreme Barber</p>
+                <ul class="list">
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/alan-black.jpg"
+                alt="Alan Black photo"
+                width="370"
+              />
+              <div class="barbers-card-text">
+                <p class="name">Alan Black</p>
+                <p class="text">Extreme Barber</p>
+                <ul class="list">
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="" class="link">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
       </section>
       <section id="portfolio" class="portfolio">
         <p class="text-description">In Latin, "barba" means "beard"</p>

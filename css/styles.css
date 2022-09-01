@@ -73,8 +73,7 @@ img {
 .link.navigation:focus {
   color: var(--accent-color);
 }
-.header .booking,
-.services .booking {
+.header .booking {
   color: var(--main-background-color);
   background-color: #555555;
   font-weight: 600;
@@ -230,6 +229,10 @@ img {
   letter-spacing: 0.05em;
   color: var(--title-text-color);
 }
+.about .text {
+  font-size: 18px;
+  line-height: 1.67;
+}
 .about .paragraph {
   margin-bottom: 42px;
 }
@@ -244,15 +247,14 @@ img {
 /*Section Services*/
 .services .section-title {
   margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 }
 .services.section {
-  width: 1600px;
-  height: 692px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/services-bcg-img.jpg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border: 1px solid #000000;
+  background-image: url(../images/services-bcg-img.png);
+  background-size: cover;
   background-color: #111319;
 }
 .services-lists {
@@ -302,34 +304,44 @@ img {
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
+.services .booking {
+  color: var(--main-background-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
 /*Section why*/
 .why-container {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 .why-main {
-  width: 570px;
-  padding-right: 70px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 .why-cards {
-  padding-left: 100px;
-  padding-right: 130px;
+  flex-basis: calc((100% - 30px) / 2);
 }
-
 .why-cards .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
 }
 .cards-item {
-  flex-basis: 170px;
+  width: 170px;
+  min-height: 134px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #f7f7f7;
 }
-.cards-item:not(:nth-child(2n)) {
-  margin-right: 30px;
+.cards-item:not(:nth-child(2n + 1)) {
+  margin-top: 30px;
 }
 .number {
   display: flex;
@@ -348,12 +360,23 @@ img {
   font-size: 16px;
   line-height: 1.38;
 }
-.about .text,
-.why .text,
-.contacts .text {
+.why-main .text-description {
+  margin-bottom: 20px;
+}
+.why-main .section-title {
+  margin-bottom: 20px;
+  width: 430px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--title-text-color);
+}
+.why .text {
   font-size: 18px;
   line-height: 1.67;
 }
+
 .services .section-title,
 .on-booking .section-title,
 .contacts .section-title {
@@ -384,10 +407,58 @@ img {
   line-height: 1.39;
   text-align: center;
 }
+/*Our barbers*/
+.barbers.section {
+  background-color: var(--secondary-background-color);
+}
+.barbers .text-description {
+  margin-bottom: 20px;
+}
+.barbers .section-title {
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--title-text-color);
+}
+.barbers .name {
+  margin-bottom: 8px;
+}
 .barbers .text {
+  margin-bottom: 30px;
   color: var(--accent-color);
   line-height: 1.36;
   text-align: center;
+}
+.barbers .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+}
+.social-icon .link {
+  display: flex;
+  fill: var(--title-text-color);
+}
+.social-icon .link:hover,
+.social-icon .link:focus {
+  fill: var(--accent-color);
+}
+.barbers-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
 }
 .address {
   font-style: normal;
@@ -401,6 +472,10 @@ img {
 }
 .link.street {
   font-weight: 700;
+}
+.contacts .text {
+  font-size: 18px;
+  line-height: 1.67;
 }
 /*Footer*/
 .page-footeer .text {
